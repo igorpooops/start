@@ -1,0 +1,21 @@
+
+/*section#main{
+	height: 1000px;
+	background-image: url(../img/bg.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;*/
+
+/*Если размеры задать в % , то они задаются от родителя*/
+/*vh-100 процентов от высоты экрана-именно от ширины браузера-для адаптивный верстки -vw*/
+
+body {
+	background-color: #aea;
+}
+
+p {
+	background-color: #fff;
+	text-align: center;
+	border:1px solid blue;
+	margin: 15px;
+}
