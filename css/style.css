@@ -8,6 +8,9 @@
 
 /*Если размеры задать в % , то они задаются от родителя*/
 /*vh-100 процентов от высоты экрана-именно от ширины браузера-для адаптивный верстки -vw*/
+/** {
+	box-sizing: border-box;/*Без подключения bootstrap размер рамок
+}*/
 
 body {
 	background-color: #aea;
@@ -19,3 +22,63 @@ p {
 	border:1px solid blue;
 	margin: 15px;
 }
+
+a{
+	display: block;
+	margin-left: 10px;
+}
+.box {
+	background-color: red;
+	width: 50px;
+	height: 100px;
+	margin: 10px;
+	border: 5px solid black;
+	border-radius: 10px;
+}
+.box2 {
+	background-color: blue;
+	width: 250px;
+	height: 100px;
+	border: 5px solid black;
+	border-radius: 10px;
+}
+
+.ex{
+	display: inline-block;
+}
+.center {
+	text-align: center;
+}
+
+.blue{
+	position: fixed;
+	left:50%;
+	margin-left: -125px;
+}
+.green{
+	background: green;
+	position: relative;
+	left:50%;
+	margin-left: -125px;
+}
+
+.dad {
+	background-color: grey;
+	border: 1px solid black;
+	width: 500px;
+	height: 200px;
+	position: relative;/*Чтобы дочка отогвегалась относительно родителя*/
+}
+.dauther {
+	background-color: red;
+	border: 1px solid black;
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	left: 50%;
+}
+/*position
+relative-Отодвигает весь тест и работают глобальные отступы
+fixed - фиксированные значение
+absolute - двигается вместе с текстом
+static - по умолчанию*/
